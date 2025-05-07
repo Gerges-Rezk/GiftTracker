@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GiftTracker - Gift List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GiftTracker - Your Gift Ideas</h1>
+    <div class="add-gift-form">
+      <input type="text" id="gift-name" placeholder="Gift Name" required>
+      <input type="text" id="recipient" placeholder="Recipient" required>
+      <input type="text" id="description" placeholder="Description" required>
+      <button onclick="addGift()">Add Gift</button>
+    </div>
+    <div class="gift-list" id="gift-list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

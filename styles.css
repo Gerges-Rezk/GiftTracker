@@ -1,0 +1,128 @@
+body {
+    background-color: #F7F7F7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    color: #4B0082;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .add-gift-form {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .add-gift-form input,
+  .add-gift-form button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .add-gift-form input {
+    flex: 1;
+    min-width: 150px;
+  }
+  .add-gift-form button {
+    background-color: #4B0082;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+  .add-gift-form button:hover {
+    background-color: #5c0ca3;
+  }
+  .gift-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .gift-item {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .gift-item h2 {
+    color: #4B0082;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .gift-item p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 16px;
+  }
+  .gift-item span {
+    font-weight: bold;
+  }
+  .reminder-icon {
+    color: #FF4500;
+    font-size: 18px;
+    display: none;
+  }
+  .reminder-form {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .reminder-form input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .reminder-form button {
+    background-color: #4B0082;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .reminder-form button:hover {
+    background-color: #5c0ca3;
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    .add-gift-form {
+      flex-direction: column;
+    }
+    .add-gift-form input,
+    .add-gift-form button {
+      width: 100%;
+    }
+    .gift-item h2 {
+      font-size: 16px;
+    }
+    .gift-item p {
+      font-size: 14px;
+    }
+    .reminder-form {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .reminder-form input,
+    .reminder-form button {
+      width: 100%;
+    }
+  }
